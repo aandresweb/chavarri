@@ -1,0 +1,150 @@
+
+/** Reset styles **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/** Variables **/
+
+:root {
+    --primary-color: #5c9434;
+    --text-color: #787878;
+    --gray-color: #ececec;
+}
+
+/** Usefull classes **/ 
+
+.wrapper {
+    max-width: 90%;
+    margin: auto;
+}
+.wrapper-md {
+    max-width: 60%;
+    margin: auto;
+}
+.text {
+    color: var(--text-color)
+}
+
+
+.grid {
+    display:grid
+}
+.grid.cols-2 {
+    grid-template-columns: 1fr 1fr;
+}
+.grid.cols-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid.cols-4 {
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+}
+
+
+
+/** End basis **/
+
+.header {
+    margin-bottom: 20px;
+}
+.header-nav {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+.header-nav-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+.header-nav-menu__item {
+
+}
+.header-nav-menu__item a {
+    display: block;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+
+
+/** Banner slider **/
+
+.swiper {
+    z-index: 0 !important;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+
+.banner-slider-slide__img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.banner-slider-prev,
+.banner-slider-next {
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: #fff !important
+}
+
+.banner-slider-prev:after,
+.banner-slider-next:after {
+    font-size: inherit !important;
+}
+
+
+/** Title section **/
+
+.title-section {
+    background-color: var(--gray-color);
+}
+
+.title-section__title {
+    font-size: 45px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.title-section__subtitle {
+    font-size: 28px;
+    text-align: left;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.title-section-content {
+    padding: 60px 50px;
+    background-color: #ffffff;
+    transform: translateY(-75px);
+}
+
+.title-section-content-left {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/** Content **/
+
+.content {
+    height: 600px;
+}
