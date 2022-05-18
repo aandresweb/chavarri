@@ -30,7 +30,9 @@ a {
     max-width: 60%;
     margin: auto;
 }
-.text {
+.text {    
+    padding-right: 1%;
+    font: Arial Regular;
     color: var(--text-color)
 }
 
@@ -141,10 +143,29 @@ a {
     align-items: center;
 }
 
+.title-section-content-right{
+    padding-left: 5%;
+}
+
 
 
 /** Content **/
 
 .content {
     height: 600px;
+}
+
+/*  Mision */
+.mision{
+    height: 500x;
+    padding-top: 6%;
+    margin: auto;
+    border: 1px solid;
+}
+
+/*Frutas*/
+
+.frutas-principal-fondo{
+    height: 100%;
+    width: 100%;
 }
