@@ -18,6 +18,7 @@ a {
     --primary-color: #5c9434;
     --text-color: #787878;
     --gray-color: #ececec;
+    --amarillo: #F0C108;
 }
 
 /** Usefull classes **/ 
@@ -33,7 +34,8 @@ a {
 .text {    
     padding-right: 1%;
     font: Arial Regular;
-    color: var(--text-color)
+    color: var(--text-color);
+    
 }
 
 
@@ -155,7 +157,7 @@ a {
     height: 600px;
 }
 
-/*  Mision */
+/* Section Mision */
 .mision{
     height: 500x;
     padding-top: 6%;
@@ -163,9 +165,63 @@ a {
     border: 1px solid;
 }
 
-/*Frutas*/
 
+/*Section Frutas*/
 .frutas-principal-fondo{
     height: 100%;
     width: 100%;
+}
+
+/*Footer*/
+footer{
+    background-color: var(--primary-color);
+    height: 300px;
+    width: 100%;
+}
+
+.footer-content{
+    /*border: 1px solid;*/
+    padding: 20px 50px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.footer-content_left{
+    display: block;
+    padding: 20px 20px;
+}
+.footer-content__title{
+    color: var(--amarillo);
+    align-self: center;
+    margin: auto;
+}
+
+.footer-content__subtitle{    
+    color: white;
+    width: 40%;
+}
+
+.footer-text{
+    font: Arial Regular;
+    color: white;
+    text-align: left;
+}
+
+.footer-subtitle{
+    display: flex;
+    padding-top: 3%;
+}
+
+.footer-content_mid{
+    display: block;
+    padding: 20px 20px;    
+}
+
+.social-icon{
+    padding: 0 3%;
+}
+
+.footer-content_right{
+    display: block;
+    padding: 20px 20px;    
 }
