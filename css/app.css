@@ -37,6 +37,10 @@ a {
     color: var(--text-color);
     
 }
+.padded{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
 
 
 .grid {
@@ -173,9 +177,9 @@ a {
 }
 
 /*Footer*/
-footer{
+.main-footer{
     background-color: var(--primary-color);
-    height: 300px;
+    height: 400px;
     width: 100%;
 }
 
@@ -224,4 +228,50 @@ footer{
 .footer-content_right{
     display: block;
     padding: 20px 20px;    
+}
+
+/* Productos Section */
+.productos-section {
+    background-color: var(--gray-color);
+}
+
+.productos-section__title {
+    font-size: 45px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.productos-section-content {
+    padding: 60px 50px;
+    background-color: #ffffff;
+    transform: translateY(-75px);
+}
+
+.productos-section-content-left {
+    display: flex;
+    align-items: center;
+}
+
+.productos-section-content-right{
+    padding-left: 5%;
+    align-self: center;
+}
+
+/*Galeria de Frutas*/
+
+#galeria{
+    background-color: var(--color1);
+    color: var(--color-blanco);
+}
+
+#galeria figure{
+    position: relative;
+}
+
+figure{
+    margin-bottom: 0;
+}
+
+.container{
+    max-width: 1600px;
 }
