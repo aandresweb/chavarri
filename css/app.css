@@ -1,4 +1,10 @@
 
+@font-face {
+    font-family: 'Arial Regular';
+    src: 'fonts/arial.ttf';
+}
+
+
 /** Reset styles **/
 
 * {
@@ -10,6 +16,7 @@
 a {
     text-decoration: none;
 }
+
 
 
 /** Variables **/
@@ -24,7 +31,7 @@ a {
 /** Usefull classes **/ 
 
 .wrapper {
-    max-width: 90%;
+    max-width: 75%;
     margin: auto;
 }
 .wrapper-md {
@@ -33,8 +40,7 @@ a {
 }
 .text {    
     padding-right: 1%;
-    font: Arial Regular;
-    font-size: 20px;
+    font-family: 'Arial Regular';
     color: var(--text-color);
     
 }
@@ -164,8 +170,7 @@ a {
 
 /* Section Mision */
 .mision{
-    height: 500x;
-    padding-top: 6%;
+    padding: 6% 0;
     margin: auto;
     border: 0px solid;
 }
@@ -194,7 +199,10 @@ a {
 .footer-content_left{
     display: block;
     padding: 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
 .footer-content__title{
     color: var(--amarillo);
     align-self: center;
@@ -203,7 +211,6 @@ a {
 
 .footer-content__subtitle{    
     color: white;
-    width: 40%;
 }
 
 .footer-text{
@@ -261,12 +268,12 @@ a {
 
 /*Galeria de Frutas*/
 
-#galeria{
+.galeria {
     background-color: var(--color1);
     color: var(--color-blanco);
 }
 
-#galeria figure{
+.galeria figure{
     position: relative;
 }
 
@@ -276,4 +283,8 @@ figure{
 
 .container{
     max-width: 1600px;
+}
+
+.galeria-grid {
+    gap: 20px
 }
