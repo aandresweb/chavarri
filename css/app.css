@@ -3,6 +3,16 @@
     font-family: 'Arial Regular';
     src: 'fonts/arial.ttf';
 }
+@font-face{
+    font-family: 'Core-Rhino';
+    src: 'fonts/core-rhino-75-heavy.otf';
+}
+@font-face{
+    font-family: 'Panton-Extra';
+    src: 'fonts/Panton-ExtraBold.otf';
+}
+
+
 
 
 /** Reset styles **/
@@ -42,7 +52,8 @@ a {
     padding-right: 1%;
     font-family: 'Arial Regular';
     color: var(--text-color);
-    
+    font-size: 18px;
+    text-align: ;
 }
 .padded{
     padding-top: 90px;
@@ -136,6 +147,7 @@ a {
     font-size: 45px;
     text-transform: uppercase;
     color: var(--primary-color);
+    font-family: 'Core-Rhino';
 }
 
 .title-section__subtitle {
@@ -159,6 +171,9 @@ a {
 .title-section-content-right{
     padding-left: 5%;
 }
+.title-section__subtitle-img{
+    float: right;
+}
 
 
 
@@ -173,6 +188,12 @@ a {
     padding: 6% 0;
     margin: auto;
     border: 0px solid;
+}
+
+.mision-section_title{
+    color: var(--primary-color);
+    font-size: 30px;
+    font-family: 'Panton-Extra';
 }
 
 
@@ -287,4 +308,11 @@ figure{
 
 .galeria-grid {
     gap: 20px
+}
+
+.galeria-subtitle{
+    text-align: center;
+    background-color: var(--gray-color);
+    font-size: 30px;
+    color: gray;
 }
