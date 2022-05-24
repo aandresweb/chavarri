@@ -9,7 +9,7 @@
 }
 @font-face{
     font-family: 'Panton-Extra';
-    src: 'fonts/Panton-ExtraBold.otf';
+    src: url('fonts/Panton-ExtraBold.otf') format('woff');
 }
 
 
@@ -25,6 +25,10 @@
 
 a {
     text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Panton-Extra';
 }
 
 
@@ -53,7 +57,6 @@ a {
     font-family: 'Arial Regular';
     color: var(--text-color);
     font-size: 18px;
-    text-align: ;
 }
 .padded{
     padding-top: 90px;
@@ -147,7 +150,6 @@ a {
     font-size: 45px;
     text-transform: uppercase;
     color: var(--primary-color);
-    font-family: 'Core-Rhino';
 }
 
 .title-section__subtitle {
