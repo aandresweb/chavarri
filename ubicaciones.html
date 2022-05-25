@@ -1,89 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="css/app.css" />
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-		/>
-		<link
-			href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-			rel="stylesheet"
-		/>
-	</head>
 
-	<body>
-		<!-- Header -->
-		<header class="header">
-			<div class="wrapper">
-				<div class="header-logo">
-					<img class="header-logo__img" src="images/logos/LOGO-01.png" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/app.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<img class="header-logo__img" src="images/logos/LOGO-01.png" />
+			</div>
+			<div class="header-mobile">
+				<img class="header-logo__img" src="images/logos/LOGO-01.png" />
+				<div class="header-mobile-button" id="header-mobile-button">
+					<i class="bx bx-menu-alt-left"></i>
 				</div>
-				<div class="header-mobile">
-					<img class="header-logo__img" src="images/logos/LOGO-01.png" />
-					<div class="header-mobile-button" id="header-mobile-button">
-						<i class="bx bx-menu-alt-left"></i>
+			</div>
+			<nav class="header-nav" id="header-nav">
+				<ul class="header-nav-menu">
+					<li class="header-nav-menu__item">
+						<a href="index.html">Nosotros</a>
+					</li>
+					<li class="header-nav-menu__item">
+						<a href="productos.html">Productos</a>
+					</li>
+					<li class="header-nav-menu__item">
+						<a href="disponibilidad.html">Disponibilidad</a>
+					</li>
+					<li class="header-nav-menu__item">
+						<a href="ubicaciones.html">Ubicación e instalaciones</a>
+					</li>
+					<li class="header-nav-menu__item">
+						<a href="certificaciones.html">Certificaciones </a>
+					</li>
+					</li>
+					<li class="header-nav-menu__item">
+						<a href="destinos.html">Destinos</a>
+					</li>
+					<li class="header-nav-menu__item">
+						<a href="contactenos.html">Contactenos</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- End header -->
+
+	<!-- Main -->
+	<main>
+		<!-- Banner Slider -->
+		<section class="banner-slider">
+			<!-- Slider -->
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="banner-slider-slide swiper-slide">
+						<img
+							class="banner-slider-slide__img"
+							src="images/Carrusel/mandarina-grande.jpg"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							class="banner-slider-slide__img"
+							src="images/Carrusel/mango-grande.jpg"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<img
+							class="banner-slider-slide__img"
+							src="images/Carrusel/ciruelas-grande.jpg"
+						/>
 					</div>
 				</div>
-				<nav class="header-nav" id="header-nav">
-					<ul class="header-nav-menu">
-						<li class="header-nav-menu__item">
-							<a href="index.html">Nosotros</a>
-						</li>
-						<li class="header-nav-menu__item">
-							<a href="productos.html">Productos</a>
-						</li>
-						<li class="header-nav-menu__item">
-							<a href="disponibilidad.html">Disponibilidad</a>
-						</li>
-						<li class="header-nav-menu__item">
-							<a href="ubicaciones.html">Ubicación e instalaciones</a>
-						</li>
-						<li class="header-nav-menu__item">
-							<a href="certificaciones.html">Certificaciones </a>
-						</li>
-						<li class="header-nav-menu__item">
-							<a href="#">Destinos</a>
-						</li>
-						<li class="header-nav-menu__item">
-							<a href="#">Contactenos</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<!-- End header -->
 
-		<!-- Main -->
-		<main>
-			<!-- Banner Slider -->
-			<section class="banner-slider">
+				<!-- If we need navigation buttons -->
+				<div class="banner-slider-prev">
+					<i class="bx bxs-chevron-left"></i>
+				</div>
+				<div class="banner-slider-next">
+					<i class="bx bxs-chevron-right"></i>
+				</div>
+			</div>
+			<!-- End slider -->
+		</section>
+
+		<section class="title-section">
+			<div class="wrapper-md">
+				<div class="title-section-content grid cols-2">
+					<div class="title-section-content-detail"></div>
+					<div class="title-section-content-left">
+						<h3 class="title-section__title">Ubicaciones e instalaciones</h3>
+						<div class="title-section__line"></div>
+					</div>
+					<div class="title-section-content-right image">
+						<img src="images/Iconos 210x220px/A-210x220px.png" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="ubicaciones" class="ubicaciones">
+			<div class="wrapper">
 				<!-- Slider -->
 				<div class="swiper">
 					<!-- Additional required wrapper -->
 					<div class="swiper-wrapper">
 						<!-- Slides -->
-						<div class="banner-slider-slide swiper-slide">
-							<img
-								class="banner-slider-slide__img"
-								src="images/Imagen Chavarri-1500x600px/A-1500x600px.jpg"
-							/>
+						<div class="swiper-slide swiper-ubicaciones-slide">
+							<div class="swiper-ubicaciones-slide-label">
+								<h3 class="swiper-ubicaciones-slide-label__text">Campos</h3>
+							</div>
+							<img class="banner-slider-slide__img"
+								src="images/Imagen Chavarri 975x590px/A1-975x590px.jpg" />
 						</div>
-						<div class="swiper-slide">
-							<img
-								class="banner-slider-slide__img"
-								src="images/Imagen Chavarri-1500x600px/B-1500x600px.jpg"
-							/>
-						</div>
-						<div class="swiper-slide">
-							<img
-								class="banner-slider-slide__img"
-								src="images/Imagen Chavarri-1500x600px/C-1500x600px.jpg"
-							/>
+						<div class="swiper-slide swiper-ubicaciones-slide">
+							<div class="swiper-ubicaciones-slide-label">
+								<h3 class="swiper-ubicaciones-slide-label__text">Campos</h3>
+							</div>
+							<img class="banner-slider-slide__img"
+								src="images/Imagen Chavarri 975x590px/A1-975x590px.jpg" />
 						</div>
 					</div>
 
@@ -96,131 +141,76 @@
 					</div>
 				</div>
 				<!-- End slider -->
-			</section>
+			</div>
+		</section>
+	</main>
+	<!-- End Main-->
 
-			<section class="title-section">
-				<div class="wrapper-md">
-					<div class="title-section-content grid cols-2">
-						<div class="title-section-content-detail"></div>
-						<div class="title-section-content-left">
-							<h3 class="title-section__title">Ubicaciones e instalaciones</h3>
-							<div class="title-section__line"></div>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-wrapper grid cols-3">
+				<div class="footer-col">
+					<div class="footer-info grid cols-2">
+						<div class="footer-info-data-item"></div>
+						<div class="footer-info-data-item">
+							<h3 class="footer-info-title">OFICINA PRINCIPAL</h3>
 						</div>
-						<div class="title-section-content-right image">
-							<img src="images/Iconos 210x220px/A-210x220px.png" />
+						<div class="footer-info-data-item">
+							<h3 class="footer-info-label">Dirección:</h3>
+						</div>
+						<div class="footer-info-data-item">
+							<p class="text footer-info-text">
+								Ca. Maron Murua Nº 150 ofc 708 <br />
+								San Miguel - Lima, Perú
+							</p>
+						</div>
+						<div class="footer-info-data-item">
+							<h3 class="footer-info-label">Teléfono:</h3>
+						</div>
+						<div class="footer-info-data-item">
+							<p class="text footer-info-text">
+								+ 51 976 849 832 <br />+ 51 (01) 5031174
+							</p>
+						</div>
+						<div class="footer-info-data-item">
+							<h3 class="footer-info-label">E-mail:</h3>
+						</div>
+						<div class="footer-info-data-item">
+							<p class="text footer-info-text">
+								nchavarri@chavarri.pe <br />atencionalcliente@chavarri.com.pe
+							</p>
 						</div>
 					</div>
 				</div>
-			</section>
-
-			<section id="ubicaciones" class="ubicaciones">
-				<div class="wrapper">
-					<!-- Slider -->
-					<div class="swiper">
-						<!-- Additional required wrapper -->
-						<div class="swiper-wrapper">
-							<!-- Slides -->
-							<div class="swiper-slide swiper-ubicaciones-slide">
-								<div class="swiper-ubicaciones-slide-label">
-									<h3 class="swiper-ubicaciones-slide-label__text">Campos</h3>
-								</div>
-								<img
-									class="banner-slider-slide__img"
-									src="images/Imagen Chavarri 975x590px/A1-975x590px.jpg"
-								/>
-							</div>
-							<div class="swiper-slide swiper-ubicaciones-slide">
-								<div class="swiper-ubicaciones-slide-label">
-									<h3 class="swiper-ubicaciones-slide-label__text">Campos</h3>
-								</div>
-								<img
-									class="banner-slider-slide__img"
-									src="images/Imagen Chavarri 975x590px/A1-975x590px.jpg"
-								/>
-							</div>
-						</div>
-
-						<!-- If we need navigation buttons -->
-						<div class="banner-slider-prev">
-							<i class="bx bxs-chevron-left"></i>
-						</div>
-						<div class="banner-slider-next">
-							<i class="bx bxs-chevron-right"></i>
-						</div>
+				<div class="footer-col">
+					<div class="footer-social">
+						<a href="#">
+							<i class="bx bxl-facebook-square"></i>
+						</a>
+						<a href="#">
+							<i class="bx bxl-linkedin-square"></i>
+						</a>
+						<a href="#">
+							<i class="bx bxl-youtube"></i>
+						</a>
 					</div>
-					<!-- End slider -->
 				</div>
-			</section>
-		</main>
-		<!-- End Main-->
-
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="wrapper">
-				<div class="footer-wrapper grid cols-3">
-					<div class="footer-col">
-						<div class="footer-info grid cols-2">
-							<div class="footer-info-data-item"></div>
-							<div class="footer-info-data-item">
-								<h3 class="footer-info-title">OFICINA PRINCIPAL</h3>
-							</div>
-							<div class="footer-info-data-item">
-								<h3 class="footer-info-label">Dirección:</h3>
-							</div>
-							<div class="footer-info-data-item">
-								<p class="text footer-info-text">
-									Ca. Maron Murua Nº 150 ofc 708 <br />
-									San Miguel - Lima, Perú
-								</p>
-							</div>
-							<div class="footer-info-data-item">
-								<h3 class="footer-info-label">Teléfono:</h3>
-							</div>
-							<div class="footer-info-data-item">
-								<p class="text footer-info-text">
-									+ 51 976 849 832 <br />+ 51 (01) 5031174
-								</p>
-							</div>
-							<div class="footer-info-data-item">
-								<h3 class="footer-info-label">E-mail:</h3>
-							</div>
-							<div class="footer-info-data-item">
-								<p class="text footer-info-text">
-									nchavarri@chavarri.pe <br />atencionalcliente@chavarri.com.pe
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="footer-col">
-						<div class="footer-social">
-							<a href="#">
-								<i class="bx bxl-facebook-square"></i>
-							</a>
-							<a href="#">
-								<i class="bx bxl-linkedin-square"></i>
-							</a>
-							<a href="#">
-								<i class="bx bxl-youtube"></i>
-							</a>
-						</div>
-					</div>
-					<div class="footer-col">
-						<div class="footer-logo-img">
-							<img src="images/logos/LOGO-02.png" alt="" />
-						</div>
+				<div class="footer-col">
+					<div class="footer-logo-img">
+						<img src="images/logos/LOGO-02.png" alt="" />
 					</div>
 				</div>
 			</div>
-		</footer>
-		<!-- End footer-->
+		</div>
+	</footer>
+	<!-- End footer-->
 
-		<!-- Scripts -->
-		<script
-			src="https://code.jquery.com/jquery-3.6.0.min.js"
-			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-			crossorigin="anonymous"
-		></script>
-		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-		<script src="js/app.js"></script>
-	</body>
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
 </html>
