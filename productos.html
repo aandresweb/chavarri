@@ -4,247 +4,293 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-		<title>Producto</title>
+		<title>Document</title>
 		<link rel="stylesheet" href="css/app.css" />
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 		/>
+		<link
+			href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
 	</head>
 
-<body>
-    <!-- Header -->
+	<body>
+		<!-- Header -->
 		<header class="header">
 			<div class="wrapper">
-				<div class="heaader-top"></div>
-				<nav class="header-nav">
+				<div class="header-logo">
+					<img class="header-logo__img" src="images/logos/LOGO-01.png" />
+				</div>
+				<div class="header-mobile">
+					<img class="header-logo__img" src="images/logos/LOGO-01.png" />
+					<div class="header-mobile-button" id="header-mobile-button">
+						<i class="bx bx-menu-alt-left"></i>
+					</div>
+				</div>
+				<nav class="header-nav" id="header-nav">
 					<ul class="header-nav-menu">
 						<li class="header-nav-menu__item">
-							<a href="#">Nostros</a>
+							<a href="index.html">Nosotros</a>
 						</li>
 						<li class="header-nav-menu__item">
-							<a href="#">Disponibilidad</a>
+							<a href="productos.html">Productos</a>
 						</li>
 						<li class="header-nav-menu__item">
-							<a href="#">Ubicación e instalaciones</a>
+							<a href="disponibilidad.html">Disponibilidad</a>
 						</li>
 						<li class="header-nav-menu__item">
-							<a href="#">Certificaciones </a>
+							<a href="ubicaciones.html">Ubicación e instalaciones</a>
+						</li>
+						<li class="header-nav-menu__item">
+							<a href="certificaciones.html">Certificaciones </a>
 						</li>
 						<li class="header-nav-menu__item">
 							<a href="#">Destinos</a>
+						</li>
+						<li class="header-nav-menu__item">
+							<a href="#">Contactenos</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-
 		<!-- End header -->
 
 		<!-- Main -->
 		<main>
 			<!-- Banner Slider -->
-
 			<section class="banner-slider">
-				<div class="wrapper">
-					<!-- Slider -->
-					<div class="swiper">
-						<!-- Additional required wrapper -->
-						<div class="swiper-wrapper">
-							<!-- Slides -->
-							<div class="banner-slider-slide swiper-slide">
-								<img
-									class="banner-slider-slide__img"
-									src="https://via.placeholder.com/1400x500.png"
-								/>
-							</div>
-							<div class="swiper-slide">
-								<img
-									class="banner-slider-slide__img"
-									src="https://via.placeholder.com/1400x500.png"
-								/>
-							</div>
-							<div class="swiper-slide">
-								<img
-									class="banner-slider-slide__img"
-									src="https://via.placeholder.com/1400x500.png"
-								/>
-							</div>
+				<!-- Slider -->
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="banner-slider-slide swiper-slide">
+							<img
+								class="banner-slider-slide__img"
+								src="images/Imagen Chavarri-1500x600px/A-1500x600px.jpg"
+							/>
 						</div>
-
-						<!-- If we need navigation buttons -->
-						<div class="banner-slider-prev swiper-button-prev"></div>
-						<div class="banner-slider-next swiper-button-next"></div>
+						<div class="swiper-slide">
+							<img
+								class="banner-slider-slide__img"
+								src="images/Imagen Chavarri-1500x600px/B-1500x600px.jpg"
+							/>
+						</div>
+						<div class="swiper-slide">
+							<img
+								class="banner-slider-slide__img"
+								src="images/Imagen Chavarri-1500x600px/C-1500x600px.jpg"
+							/>
+						</div>
 					</div>
-					<!-- End slider -->
-				</div>
-			</section><!-- End Banner Slider-->
 
-            <!-- Productos -->
-			<section class="productos-section">
+					<!-- If we need navigation buttons -->
+					<div class="banner-slider-prev">
+						<i class="bx bxs-chevron-left"></i>
+					</div>
+					<div class="banner-slider-next">
+						<i class="bx bxs-chevron-right"></i>
+					</div>
+				</div>
+				<!-- End slider -->
+			</section>
+
+			<section class="title-section">
 				<div class="wrapper-md">
-					<div class="productos-section-content grid cols-2">
-						<div class="productos-section-content-left">
-							<h3 class="productos-section__title">Nuestros Productos</h3>
+					<div class="title-section-content grid cols-2">
+						<div class="title-section-content-detail"></div>
+						<div class="title-section-content-left">
+							<h3 class="title-section__title">Nuestros Productoss</h3>
+							<div class="title-section__line"></div>
 						</div>
-						<div class="productos-section-content-right">
-							<img src="images/Iconos 210x220px/A-210x220px.png">		
+						<div class="title-section-content-right image">
+							<img src="images/Iconos 210x220px/A-210x220px.png" />
 						</div>
 					</div>
 				</div>
-			</section><!-- Fin Productos -->
-			
-            <!--Inicio imagenes-->
+			</section>
 
-            <section id="galeria" class="wrapper galeria">
-                <div class="container">
-                    <h2>Galeria Frutas</h2>
-                    <div class="galeria-grid grid cols-3">
-                        <div class="galeria-main_img">						
-							<img src="images/Productos/A1-310x205px.png" alt="">                                
+			<section class="wrapper galeria">
+				<div class="container">
+					<div class="galeria-main-title">
+						<h2>PALTA</h2>
+					</div>
+					<div class="galeria-grid grid cols-3">
+						<div class="galeria-main_img">
+							<img src="images/Productos/A1-310x205px.png" alt="" />
 							<p class="galeria-subtitle">Hass</p>
 						</div>
-                        <div class="galeria-main_img">
-							<img src="images/Productos/A2-310x205px.png" alt="">                                
+						<div class="galeria-main_img">
+							<img src="images/Productos/A2-310x205px.png" alt="" />
 							<p class="galeria-subtitle">Fuerte</p>
 						</div>
 						<div class="galeria-main_img">
-							<img src="images/Productos/A3-310x205px.png" alt="">                                
-								<p class="galeria-subtitle">Naval</p>
+							<img src="images/Productos/A3-310x205px.png" alt="" />
+							<p class="galeria-subtitle">Naval</p>
 						</div>
 						<!-- Paltas -->
+					</div>
 
+					<div class="galeria-main-title">
+						<h2>CITRICOS</h2>
+					</div>
+					<div class="galeria-grid grid cols-3">
 						<div class="galeria-main_img">
-							<img src="images/Productos/B1-310x205px.png" alt="">                                
+							<img src="images/Productos/B1-310x205px.png" alt="" />
 							<p class="galeria-subtitle">W. Murcott</p>
 						</div>
 						<div class="galeria-main_img">
-							<img src="images/Productos/B2-310x205px.png" alt="">                                
+							<img src="images/Productos/B2-310x205px.png" alt="" />
 							<p class="galeria-subtitle">Malvacea</p>
 						</div>
 						<div class="galeria-main_img">
-							<img src="images/Productos/B3-310x205px.png" alt="">                                
+							<img src="images/Productos/B3-310x205px.png" alt="" />
 							<p class="galeria-subtitle">Satsuma</p>
 						</div>
 						<!--Citricos-->
+					</div>
 
+					<div class="galeria-main-title">
+						<h2>ARANDANOS</h2>
+					</div>
+					<div class="galeria-grid grid cols-3">
 						<div class="galeria-main_img">
-							<img src="images/Productos/C1-310x205px.png" alt="">                                
-								<p class="galeria-subtitle">Biloxi</p>
+							<img src="images/Productos/C1-310x205px.png" alt="" />
+							<p class="galeria-subtitle">Biloxi</p>
 						</div>
 						<div class="galeria-main_img">
-							<img src="images/Productos/C2-310x205px.png" alt="">                                
+							<img src="images/Productos/C2-310x205px.png" alt="" />
 							<p class="galeria-subtitle">Ventura</p>
 						</div>
 						<div class="galeria-main_img">
-							<img src="images/Productos/C3-310x205px.png" alt="">                                
+							<img src="images/Productos/C3-310x205px.png" alt="" />
 							<p class="galeria-subtitle">Emerald</p>
-						</div>  
-						<!--Arandanos-->    
+						</div>
+						<!--Arandanos-->
+					</div>
 
+					<div class="galeria-main-title">
+						<h2>UVAS</h2>
+					</div>
+					<div class="galeria-grid grid cols-3">
 						<div class="galeria-main_img">
-							<img src="images/Productos/D1-310x205px.png" alt="">                                
-								<p class="galeria-subtitle">Red Globe</p>
+							<img src="images/Productos/D1-310x205px.png" alt="" />
+							<p class="galeria-subtitle">Red Globe</p>
 						</div>
 						<div class="galeria-main_img">
-							<img src="images/Productos/D2-310x205px.png" alt="">                                
+							<img src="images/Productos/D2-310x205px.png" alt="" />
 							<p class="galeria-subtitle">Sugraone</p>
 						</div>
 						<div class="galeria-main_img">
-							<img src="images/Productos/D3-310x205px.png" alt="">                                
+							<img src="images/Productos/D3-310x205px.png" alt="" />
 							<p class="galeria-subtitle">Thompson</p>
-						</div>  
-						<!--Uvas-->   
-						
+						</div>
+						<!--Uvas-->
+					</div>
+
+					<div class="galeria-main-title">
+						<h2>MANGOS</h2>
+					</div>
+					<div class="galeria-grid grid cols-3">
 						<div class="galeria-main_img">
-							<img src="images/Productos/E1-310x205px.png" alt="">                                
-								<p class="galeria-subtitle">Kent</p>
+							<img src="images/Productos/E1-310x205px.png" alt="" />
+							<p class="galeria-subtitle">Kent</p>
 						</div>
 						<div class="galeria-main_img">
-							<img src="images/Productos/E2-310x205px.png" alt="">                                
+							<img src="images/Productos/E2-310x205px.png" alt="" />
 							<p class="galeria-subtitle">Haden</p>
 						</div>
 						<div class="galeria-main_img">
-							<img src="images/Productos/E3-310x205px.png" alt="">                                
+							<img src="images/Productos/E3-310x205px.png" alt="" />
 							<p class="galeria-subtitle">Ataulfo</p>
-						</div>  
-						<!--Mangos-->   
+						</div>
+						<!--Mangos-->
+					</div>
 
-						<div class="galeria-main_img"><!--Faltaria centrar la imagen-->
-							<img src="images/Productos/F1-310x205px.png" alt="">                                
+					<div class="galeria-main-title">
+						<h2>GRANADAS</h2>
+					</div>
+					<div class="galeria-grid grid cols-3">
+						<div class="galeria-main_img">
+							<img src="images/Productos/F1-310x205px.png" alt="" />
 							<p class="galeria-subtitle">Wonderful</p>
-						</div>  
-                    </div>
-                </div>
-            </section>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- End Main-->
 
-        <!-- Footer -->
-		<footer class="main-footer">
+		<!-- Footer -->
+		<footer class="footer">
 			<div class="wrapper">
-				<div class="footer-content grid cols-3">
-					<div class="footer-content_left">
-						<!--Izquierda-->
-						<div>
-							<img src="https://via.placeholder.com/80x80.png" alt="" />
-						</div>
-						<div>
-							<h1 class="footer-content__title">Oficina Principal</h1>
-						</div>
-
-						<div>
-							<h4 class="footer-content__subtitle">Direccion:</h4>
-						</div>
-						<div>
-							<p class="footer-text">
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-							</p>
-						</div>
-
-						<div>
-							<h4 class="footer-content__subtitle">Telefono:</h4>
-						</div>
-						<div>
-							<p class="footer-text">
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-							</p>
-						</div>
-
-						<div>
-							<h4 class="footer-content__subtitle">Email:</h4>
-						</div>
-						<div>
-							<p class="footer-text">
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-							</p>
+				<div class="footer-wrapper grid cols-3">
+					<div class="footer-col">
+						<div class="footer-info grid cols-2">
+							<div class="footer-info-data-item"></div>
+							<div class="footer-info-data-item">
+								<h3 class="footer-info-title">OFICINA PRINCIPAL</h3>
+							</div>
+							<div class="footer-info-data-item">
+								<h3 class="footer-info-label">Dirección:</h3>
+							</div>
+							<div class="footer-info-data-item">
+								<p class="text footer-info-text">
+									Ca. Maron Murua Nº 150 ofc 708 <br />
+									San Miguel - Lima, Perú
+								</p>
+							</div>
+							<div class="footer-info-data-item">
+								<h3 class="footer-info-label">Teléfono:</h3>
+							</div>
+							<div class="footer-info-data-item">
+								<p class="text footer-info-text">
+									+ 51 976 849 832 <br />+ 51 (01) 5031174
+								</p>
+							</div>
+							<div class="footer-info-data-item">
+								<h3 class="footer-info-label">E-mail:</h3>
+							</div>
+							<div class="footer-info-data-item">
+								<p class="text footer-info-text">
+									nchavarri@chavarri.pe <br />atencionalcliente@chavarri.com.pe
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="footer-content_mid">
+					<div class="footer-col">
 						<div class="footer-social">
-							<img
-								class="social-icon"
-								src="https://via.placeholder.com/60x60.png"
-								alt=""
-							/>
-							<img
-								class="social-icon"
-								src="https://via.placeholder.com/60x60.png"
-								alt=""
-							/>
-							<img
-								class="social-icon"
-								src="https://via.placeholder.com/60x60.png"
-								alt=""
-							/>
+							<a href="#">
+								<i class="bx bxl-facebook-square"></i>
+							</a>
+							<a href="#">
+								<i class="bx bxl-linkedin-square"></i>
+							</a>
+							<a href="#">
+								<i class="bx bxl-youtube"></i>
+							</a>
 						</div>
 					</div>
-					<div class="footer-content_right">
-						<img src="https://via.placeholder.com/230x70.png" alt="" />
+					<div class="footer-col">
+						<div class="footer-logo-img">
+							<img src="images/logos/LOGO-02.png" alt="" />
+						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
 		<!-- End footer-->
-    
-</body>
+
+		<!-- Scripts -->
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script src="js/app.js"></script>
+	</body>
 </html>
